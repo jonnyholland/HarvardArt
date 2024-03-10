@@ -1,0 +1,503 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E53651F2B9A6D0D00C10360 /* HarvardArtMuseumsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E53651E2B9A6D0D00C10360 /* HarvardArtMuseumsApp.swift */; };
+		1E5365252B9A6D0E00C10360 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E5365242B9A6D0E00C10360 /* Assets.xcassets */; };
+		1E5365292B9A6D0E00C10360 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E5365282B9A6D0E00C10360 /* Preview Assets.xcassets */; };
+		1E5365392B9A6DF300C10360 /* ArtServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5365382B9A6DF300C10360 /* ArtServer.swift */; };
+		1E866DA32B9C314600858E6C /* ObjectAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E866DA22B9C314600858E6C /* ObjectAPI.swift */; };
+		1E866DA72B9C316300858E6C /* ObjectAPIResponseObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E866DA62B9C316300858E6C /* ObjectAPIResponseObjects.swift */; };
+		1E866DAA2B9C325600858E6C /* ArtworkListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E866DA92B9C325600858E6C /* ArtworkListCoordinator.swift */; };
+		1E866DAC2B9C402700858E6C /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E866DAB2B9C402700858E6C /* Application.swift */; };
+		1E866DAF2B9C416900858E6C /* ArtworkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E866DAE2B9C416900858E6C /* ArtworkList.swift */; };
+		1E866DB22B9D0C7100858E6C /* ArtworkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E866DB12B9D0C7100858E6C /* ArtworkDetail.swift */; };
+		1E866DB92B9D1A8100858E6C /* AlignedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E866DB82B9D1A8100858E6C /* AlignedLabel.swift */; };
+		1EE7FCA92B9E681E005223F3 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE7FCA82B9E681E005223F3 /* Color+Extensions.swift */; };
+		1EE7FCAC2B9E72C1005223F3 /* ComposableArchitecturePattern in Frameworks */ = {isa = PBXBuildFile; productRef = 1EE7FCAB2B9E72C1005223F3 /* ComposableArchitecturePattern */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1E53651B2B9A6D0D00C10360 /* HarvardArtMuseums.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HarvardArtMuseums.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E53651E2B9A6D0D00C10360 /* HarvardArtMuseumsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarvardArtMuseumsApp.swift; sourceTree = "<group>"; };
+		1E5365242B9A6D0E00C10360 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1E5365262B9A6D0E00C10360 /* HarvardArtMuseums.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HarvardArtMuseums.entitlements; sourceTree = "<group>"; };
+		1E5365282B9A6D0E00C10360 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1E5365382B9A6DF300C10360 /* ArtServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtServer.swift; sourceTree = "<group>"; };
+		1E866DA22B9C314600858E6C /* ObjectAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectAPI.swift; sourceTree = "<group>"; };
+		1E866DA62B9C316300858E6C /* ObjectAPIResponseObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectAPIResponseObjects.swift; sourceTree = "<group>"; };
+		1E866DA92B9C325600858E6C /* ArtworkListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkListCoordinator.swift; sourceTree = "<group>"; };
+		1E866DAB2B9C402700858E6C /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
+		1E866DAE2B9C416900858E6C /* ArtworkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkList.swift; sourceTree = "<group>"; };
+		1E866DB12B9D0C7100858E6C /* ArtworkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkDetail.swift; sourceTree = "<group>"; };
+		1E866DB82B9D1A8100858E6C /* AlignedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignedLabel.swift; sourceTree = "<group>"; };
+		1EE7FCA82B9E681E005223F3 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1E5365182B9A6D0D00C10360 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EE7FCAC2B9E72C1005223F3 /* ComposableArchitecturePattern in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E5365122B9A6D0D00C10360 = {
+			isa = PBXGroup;
+			children = (
+				1E53651D2B9A6D0D00C10360 /* HarvardArtMuseums */,
+				1E53651C2B9A6D0D00C10360 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1E53651C2B9A6D0D00C10360 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1E53651B2B9A6D0D00C10360 /* HarvardArtMuseums.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1E53651D2B9A6D0D00C10360 /* HarvardArtMuseums */ = {
+			isa = PBXGroup;
+			children = (
+				1E866DAD2B9C412A00858E6C /* Views */,
+				1E866DA82B9C324000858E6C /* Coordinators */,
+				1E5365372B9A6DC000C10360 /* Networking */,
+				1E5365362B9A6DBA00C10360 /* Model */,
+				1E5365342B9A6DAC00C10360 /* System */,
+				1E5365352B9A6DB200C10360 /* Resources */,
+				1E5365262B9A6D0E00C10360 /* HarvardArtMuseums.entitlements */,
+				1E5365272B9A6D0E00C10360 /* Preview Content */,
+			);
+			path = HarvardArtMuseums;
+			sourceTree = "<group>";
+		};
+		1E5365272B9A6D0E00C10360 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1E5365282B9A6D0E00C10360 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1E5365342B9A6DAC00C10360 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				1E53651E2B9A6D0D00C10360 /* HarvardArtMuseumsApp.swift */,
+				1E866DAB2B9C402700858E6C /* Application.swift */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		1E5365352B9A6DB200C10360 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1E5365242B9A6D0E00C10360 /* Assets.xcassets */,
+				1EE7FCA82B9E681E005223F3 /* Color+Extensions.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1E5365362B9A6DBA00C10360 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1E866DA62B9C316300858E6C /* ObjectAPIResponseObjects.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1E5365372B9A6DC000C10360 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				1E866DA12B9C313D00858E6C /* APIs */,
+				1E5365382B9A6DF300C10360 /* ArtServer.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		1E866DA12B9C313D00858E6C /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				1E866DA42B9C314C00858E6C /* Object */,
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
+		1E866DA42B9C314C00858E6C /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				1E866DA22B9C314600858E6C /* ObjectAPI.swift */,
+			);
+			path = Object;
+			sourceTree = "<group>";
+		};
+		1E866DA82B9C324000858E6C /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				1E866DA92B9C325600858E6C /* ArtworkListCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		1E866DAD2B9C412A00858E6C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1E866DB72B9D1A6E00858E6C /* General Reuse */,
+				1E866DB02B9D0C5B00858E6C /* Artwork */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1E866DB02B9D0C5B00858E6C /* Artwork */ = {
+			isa = PBXGroup;
+			children = (
+				1E866DAE2B9C416900858E6C /* ArtworkList.swift */,
+				1E866DB12B9D0C7100858E6C /* ArtworkDetail.swift */,
+			);
+			path = Artwork;
+			sourceTree = "<group>";
+		};
+		1E866DB72B9D1A6E00858E6C /* General Reuse */ = {
+			isa = PBXGroup;
+			children = (
+				1E866DB82B9D1A8100858E6C /* AlignedLabel.swift */,
+			);
+			path = "General Reuse";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1E53651A2B9A6D0D00C10360 /* HarvardArtMuseums */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E53652C2B9A6D0E00C10360 /* Build configuration list for PBXNativeTarget "HarvardArtMuseums" */;
+			buildPhases = (
+				1E5365172B9A6D0D00C10360 /* Sources */,
+				1E5365182B9A6D0D00C10360 /* Frameworks */,
+				1E5365192B9A6D0D00C10360 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HarvardArtMuseums;
+			packageProductDependencies = (
+				1EE7FCAB2B9E72C1005223F3 /* ComposableArchitecturePattern */,
+			);
+			productName = HarvardArtMuseums;
+			productReference = 1E53651B2B9A6D0D00C10360 /* HarvardArtMuseums.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1E5365132B9A6D0D00C10360 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					1E53651A2B9A6D0D00C10360 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 1E5365162B9A6D0D00C10360 /* Build configuration list for PBXProject "HarvardArtMuseums" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1E5365122B9A6D0D00C10360;
+			packageReferences = (
+				1EE7FCAA2B9E72C1005223F3 /* XCRemoteSwiftPackageReference "ComposableArchitecturePattern" */,
+			);
+			productRefGroup = 1E53651C2B9A6D0D00C10360 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1E53651A2B9A6D0D00C10360 /* HarvardArtMuseums */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1E5365192B9A6D0D00C10360 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E5365292B9A6D0E00C10360 /* Preview Assets.xcassets in Resources */,
+				1E5365252B9A6D0E00C10360 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1E5365172B9A6D0D00C10360 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E866DAC2B9C402700858E6C /* Application.swift in Sources */,
+				1E5365392B9A6DF300C10360 /* ArtServer.swift in Sources */,
+				1E866DB92B9D1A8100858E6C /* AlignedLabel.swift in Sources */,
+				1E866DAA2B9C325600858E6C /* ArtworkListCoordinator.swift in Sources */,
+				1E866DAF2B9C416900858E6C /* ArtworkList.swift in Sources */,
+				1EE7FCA92B9E681E005223F3 /* Color+Extensions.swift in Sources */,
+				1E53651F2B9A6D0D00C10360 /* HarvardArtMuseumsApp.swift in Sources */,
+				1E866DB22B9D0C7100858E6C /* ArtworkDetail.swift in Sources */,
+				1E866DA32B9C314600858E6C /* ObjectAPI.swift in Sources */,
+				1E866DA72B9C316300858E6C /* ObjectAPIResponseObjects.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1E53652A2B9A6D0E00C10360 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1E53652B2B9A6D0E00C10360 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		1E53652D2B9A6D0E00C10360 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HarvardArtMuseums/HarvardArtMuseums.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HarvardArtMuseums/Preview Content\"";
+				DEVELOPMENT_TEAM = 2W5FCWZT7J;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cap.HarvardArtMuseums;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1E53652E2B9A6D0E00C10360 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HarvardArtMuseums/HarvardArtMuseums.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HarvardArtMuseums/Preview Content\"";
+				DEVELOPMENT_TEAM = 2W5FCWZT7J;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cap.HarvardArtMuseums;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1E5365162B9A6D0D00C10360 /* Build configuration list for PBXProject "HarvardArtMuseums" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E53652A2B9A6D0E00C10360 /* Debug */,
+				1E53652B2B9A6D0E00C10360 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E53652C2B9A6D0E00C10360 /* Build configuration list for PBXNativeTarget "HarvardArtMuseums" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E53652D2B9A6D0E00C10360 /* Debug */,
+				1E53652E2B9A6D0E00C10360 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1EE7FCAA2B9E72C1005223F3 /* XCRemoteSwiftPackageReference "ComposableArchitecturePattern" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:jonnyholland/ComposableArchitecturePattern.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1EE7FCAB2B9E72C1005223F3 /* ComposableArchitecturePattern */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1EE7FCAA2B9E72C1005223F3 /* XCRemoteSwiftPackageReference "ComposableArchitecturePattern" */;
+			productName = ComposableArchitecturePattern;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 1E5365132B9A6D0D00C10360 /* Project object */;
+}
